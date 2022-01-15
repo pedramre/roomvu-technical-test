@@ -4,12 +4,16 @@ import '../styles/globals.css';
 import { Provider } from 'react-redux'
 import { createWrapper } from 'next-redux-wrapper'
 import store from '../redux/store'
+import NextNProgress from 'nextjs-progressbar';
 
 import  Layout  from '../components/Layout'
 
 function MyApp({ Component, pageProps }) {
   return(
       <Layout>
+          <NextNProgress
+            color="#d23669"
+          />
           <Provider store={store}>
             <Component {...pageProps} />
           </Provider>

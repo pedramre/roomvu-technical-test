@@ -1,10 +1,10 @@
 body{
     --pink: #d23669;
+
 }
 
 
-body.light {
-    --bg: #fff;
+body.light,body {
     --bg-secondary: #f9fafb;
     --header: var(--pink);
     --textNormal: #222;

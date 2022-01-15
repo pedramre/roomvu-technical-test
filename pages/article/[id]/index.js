@@ -2,6 +2,7 @@ import Link from 'next/link'
 import CustomLink from "../../../components/Link";
 import Date from "../../../components/Date";
 import {ReadDuration} from "../../../components/ReadDuration";
+import {fetchArticle} from "../../../Services/articles";
 
 const article = ({ article }) => {
 
@@ -38,11 +39,7 @@ const article = ({ article }) => {
 }
 
 export const getStaticProps = async (context) => {
-    const res = await fetch(
-        `https://jsonplaceholder.typicode.com/posts/${context.params.id.toString()}`
-    )
-
-    const article = await res.json()
+    const article = await fetchArticle(context.params.id.toString())
 
     return {
         props: {
