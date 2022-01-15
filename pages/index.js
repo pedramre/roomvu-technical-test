@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import Link from '../components/Link'
 import Image from 'next/image'
+import ArticleList from "../components/Article/ArticleList";
+import {fetchArticles} from "../Services/articles";
 
-export default function Home() {
+export default function Home({articles}) {
   return (
     <div>
       <Head>
@@ -20,43 +22,19 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="articles d-flex flex-column my-5">
-          <div className="articles-title">
-            <h3><Link href="/">npm audit: Broken by Design</Link></h3>
-          </div>
-          <div className="articles-date mb-1">
-            <span>July 7, 2021 • ☕️☕️☕️ 14 min read</span>
-          </div>
-          <div className="articles-abstract">
-            <span>Found 99 vulnerabilities (84 moderately irrelevant, 15 highly irrelevant)</span>
-          </div>
-        </div>
+        <ArticleList articles={articles} />
 
-        <div className="articles d-flex flex-column my-5">
-          <div className="articles-title">
-            <h3><Link href="/">npm audit: Broken by Design</Link></h3>
-          </div>
-          <div className="articles-date mb-1">
-            <span>July 7, 2021 • ☕️☕️☕️ 14 min read</span>
-          </div>
-          <div className="articles-abstract">
-            <span>Found 99 vulnerabilities (84 moderately irrelevant, 15 highly irrelevant)</span>
-          </div>
-        </div>
-
-        <div className="articles d-flex flex-column my-5">
-          <div className="articles-title">
-            <h3><Link href="/">npm audit: Broken by Design</Link></h3>
-          </div>
-          <div className="articles-date mb-1">
-            <span>July 7, 2021 • ☕️☕️☕️ 14 min read</span>
-          </div>
-          <div className="articles-abstract">
-            <span>Found 99 vulnerabilities (84 moderately irrelevant, 15 highly irrelevant)</span>
-          </div>
-        </div>
       </section>
 
     </div>
   )
+}
+
+export const getStaticProps = async () => {
+  const articles = await fetchArticles();
+  return {
+    props: {
+      articles,
+    },
+  }
 }
