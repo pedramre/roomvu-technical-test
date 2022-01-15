@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "merri-black";
+    src: url("fonts/Merriweather/Merriweather-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "merri-black-italic";
+    src: url("fonts/Merriweather/Merriweather-BlackItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "merri-bold";
+    src: url("fonts/Merriweather/Merriweather-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "merri-bold-italic";
+    src: url("fonts/Merriweather/Merriweather-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "merri-italic";
+    src: url("fonts/Merriweather/Merriweather-Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "merri-light";
+    src: url("fonts/Merriweather/Merriweather-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "merri-light-italic";
+    src: url("fonts/Merriweather/Merriweather-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "merri-regular";
+    src: url("fonts/Merriweather/Merriweather-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "montserrat-black";
+    src: url("fonts/Montserrat/Montserrat-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "montserrat-black-italic";
+    src: url("fonts/Montserrat/Montserrat-BlackItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "montserrat-bold";
+    src: url("fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "montserrat-bold-italic";
+    src: url("fonts/Montserrat/Montserrat-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "montserrat-extra-bold";
+    src: url("fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "montserrat-extra-bold-italic";
+    src: url("fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "montserrat-extra-light";
+    src: url("fonts/Montserrat/Montserrat-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "montserrat-extra-light-italic";
+    src: url("fonts/Montserrat/Montserrat-ExtraLightItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "montserrat-italic";
+    src: url("fonts/Montserrat/Montserrat-Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "montserrat-light";
+    src: url("fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "montserrat-light-italic";
+    src: url("fonts/Montserrat/Montserrat-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "montserrat-medium";
+    src: url("fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "montserrat-medium-italic";
+    src: url("fonts/Montserrat/Montserrat-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "montserrat-regular";
+    src: url("fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "montserrat-semibold";
+    src: url("fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "montserrat-semibold-italic";
+    src: url("fonts/Montserrat/Montserrat-SemiBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "montserrat-thin";
+    src: url("fonts/Montserrat/Montserrat-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "montserrat-thin-italic";
+    src: url("fonts/Montserrat/Montserrat-ThinItalic.ttf") format("truetype");
+}
