@@ -8,7 +8,7 @@ const ArticleList = ({articles}) => {
         articles.map((article) => (
             <div key={article.id} className="articles d-flex flex-column my-5">
                 <div className="articles-title">
-                    <h3><Link href="">{ article.title }</Link></h3>
+                    <h3><Link href={`/article/${article.id}`}>{ article.title }</Link></h3>
                 </div>
                 <div className="articles-date mb-1">
                     <span> <Date/> • <ReadDuration/> </span>
