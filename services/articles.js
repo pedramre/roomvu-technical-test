@@ -2,7 +2,8 @@ import { api } from '../config'
 
 export const fetchArticles = async ()=>{
     const res = await fetch(`${api}?_limit=15`)
-    return await res.json()
+    const articles =await res.json()
+    return await articles.sort((a, b) => b.id - a.id);;
 }
 
 export const fetchArticle = async (id)=>{

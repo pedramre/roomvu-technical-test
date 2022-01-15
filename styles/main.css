@@ -1,8 +1,6 @@
 body{
     --pink: #d23669;
-
 }
-
 
 body.light,body {
     --bg-secondary: #f9fafb;
