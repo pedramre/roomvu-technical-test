@@ -1,9 +1,10 @@
-import { Header } from './Header'
+import Header  from './Header'
 import { Footer } from './Footer'
+import {connect} from "react-redux";
 
-export const Layout = ({ children }) => {
+const Layout = ({ children ,data}) => {
     return(
-        <div className="container">
+        <div className={`container ${data.theme}`}>
             <div className="main-container">
                 <Header/>
 
@@ -15,3 +16,9 @@ export const Layout = ({ children }) => {
         </div>
     )
 }
+
+const mapStateToProps = (state) => ({
+    data: state.theme
+})
+
+export default connect(mapStateToProps)(Layout)

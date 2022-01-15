@@ -1,12 +1,11 @@
-import {useEffect, useState} from "react";
+import { connect } from 'react-redux'
+import { toggleTheme } from '../redux/action/theme/creator'
 import Toggle from 'react-toggle'
 import "react-toggle/style.css"
 import {DayToggle} from "./DayToggle";
 import {NightToggle} from "./NightToggle";
 
-export const Header = ()=>{
-    const[theme,setTheme] = useState(false);
-
+const Header = (props)=>{
     return (
         <header className="">
             <div className="header w-100">
@@ -19,10 +18,22 @@ export const Header = ()=>{
                         unchecked: <DayToggle/>,
                         checked: <NightToggle/>,
                     }}
-                    defaultChecked={theme}/>
+                    defaultChecked={props.data.theme==='light'}
+                    onChange={() => props.toggleTheme()}
+                />
 
             </div>
         </header>
     )
 
 }
+
+const mapStateToProps = (state) => ({
+    data: state.theme
+})
+
+const mapDispatchToProps = (dispatch) => ({
+    toggleTheme: (string) => dispatch(toggleTheme('TOGGLE')),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header)

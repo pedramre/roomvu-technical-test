@@ -3,7 +3,6 @@ import Date from "../Date"
 import {ReadDuration} from "../ReadDuration";
 
 const ArticleList = ({articles}) => {
-    console.log(articles)
     return(
         articles.map((article) => (
             <div key={article.id} className="articles d-flex flex-column my-5">

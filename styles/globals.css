@@ -2,11 +2,11 @@
 @import "main.css";
 
 body{
+  background-color: var(--bg) !important;
   font-family: 'merri','Georgia',serif;
   font-weight: 400;
   word-wrap: break-word;
   font-kerning: normal;
-  background: var(--bg);
 }
 
 a{
@@ -80,6 +80,11 @@ a:hover{
 
 .articles .articles-abstract span{
   font-family: 'merri-regular' , sans-serif;
+  color: var(--textNormal);
+}
+
+.articles-date{
+  color: var(--textNormal);
 }
 
 /* End Article */
@@ -115,14 +120,10 @@ a:hover{
 .main-single-article article header h1{
   font-family: 'montserrat-extra-bold', sans-serif;
   font-size: 2.8rem;
+  color: var(--textNormal);
 }
 
-.main-single-article article header h1{
-  font-family: 'montserrat-extra-bold', sans-serif;
-  font-size: 2.8rem;
-}
-
-.main-single-article article .article-description{
+.main-single-article article .article-description,.main-single-article footer a{
   color: var(--textNormal);
 }
 /* End Single Article */
